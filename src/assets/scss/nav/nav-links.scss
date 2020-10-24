@@ -1,0 +1,16 @@
+@import '../_utilities';
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    a{
+        color: black;
+        transition: .2s all ease-out;
+        &:hover{
+        color: $blue;
+        }
+    }
+    .active{
+        color: $blue;
+    }
+}

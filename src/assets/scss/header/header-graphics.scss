@@ -1,0 +1,36 @@
+@import '../_utilities';
+
+.h-graphics-container{
+    width: 550px;
+    height: 100%;
+
+
+
+}
+.h-testimony{
+position: relative;
+bottom: 90px;
+margin-top: -130px;
+margin-left: -45px;
+    color: white;
+    background-color: $dark-blue;
+    width: 500px;
+
+    padding: 45px;
+    .title{
+        margin-top: 15px;
+    }
+}
+.bg-shape{
+      position: absolute;
+      bottom: -230px;
+      z-index: -1;
+      right: 0;
+    display: block;
+    height: 500px;
+    width: 500px;
+
+
+
+    background-color: $grey;
+}

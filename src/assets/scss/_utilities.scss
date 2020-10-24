@@ -1,0 +1,67 @@
+//*colors
+$blue: rgb(18, 100, 250);
+$hover-blue: #387cfa;
+$light-blue: rgba(18, 99, 250, 0.85);
+$dark-blue: rgb(0, 37, 105);
+$grey: rgba(0, 37, 105,.15);
+
+//*font-size
+$h-title-large: 50px;
+$h-title-mid:40px;
+$h-title: 16px ;
+$h-sub-title: 16px;
+$text: 14px;
+
+
+//*Base Rules
+header,section{
+  padding: 30px 0;
+}
+.main-container {
+  max-width: 1140px;
+  padding: 0 15px;
+  display: block;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+}
+@mixin link-padding {
+  padding: 10px 15px;
+}
+@mixin button {
+  border-color: rgb(214, 213, 213);
+  border-radius: 30px;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 14px;
+  padding: 10px 20px;
+}
+@mixin sub-text{
+color:hsla(232, 100%, 11%, 0.55);
+}
+.h-sub-title{
+  font-size: $h-sub-title;
+  font-weight: bold;
+}
+.p-text {
+  font-size: $text;
+}
+.header-text {
+  font-size: $h-title;
+  font-weight: bold;
+}
+.header-text-large {
+  font-weight: bold;
+  font-size: $h-title-large ;
+}
+
+li {
+  list-style: none;
+  a {
+    text-decoration: none;
+    @include link-padding;
+  }
+}
+
+a {
+  text-decoration: none;
+}

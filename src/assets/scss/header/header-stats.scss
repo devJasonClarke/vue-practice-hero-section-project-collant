@@ -1,0 +1,22 @@
+@import '../_utilities';
+.header-stats-container{
+    display: flex;
+    justify-content: space-between;
+}
+.stats-container{
+    text-align: center;
+    width: 255px;
+}
+.percent{
+    font-size:$h-title-mid;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.rating{
+    margin: 5px 0;
+}
+
+.description{
+@include sub-text;
+}

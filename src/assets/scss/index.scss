@@ -1,0 +1,14 @@
+@import "_utilities";
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+button{
+  cursor: pointer;
+  outline: none;
+}
+p{
+  line-height: 1.8;
+}

@@ -1,0 +1,59 @@
+@import "../_utilities";
+.center {
+  display: grid;
+  align-content: center;
+
+}
+.header-cta-container {
+  max-width: 460px;
+  padding: 0 15px 0 0;
+margin-top: -100px;
+  p {
+    margin: 30px 0;
+  }
+}
+
+a {
+  @include button;
+  width: 149px;
+  display: block;
+  background-color: $blue;
+  color: white;
+  padding: 15px 30px;
+  &:hover {
+    background-color: $hover-blue;
+  }
+}
+
+.header-info-container {
+  display: flex;
+  max-width: 500px;
+  margin-top: 60px;
+  position: relative;
+  img {
+    height: 60px;
+    width: auto;
+  }
+}
+.header-info-component {
+  margin-right: 15px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-left: -10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background-color: $light-blue;
+    z-index: -1;
+  }
+  p:nth-child(3) {
+    @include sub-text;
+    font-size: $text;
+  }
+}
+.h-sub-title {
+  margin: 10px 0 8px 0;
+}
