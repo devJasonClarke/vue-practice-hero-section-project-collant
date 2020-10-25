@@ -31,6 +31,7 @@ export default {
   methods: {
     signIn() {
       this.loggedIn = !this.loggedIn;
+      this.info = [];
     },
     signInForm() {
       this.form = true;

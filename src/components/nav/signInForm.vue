@@ -50,7 +50,8 @@ export default {
           gender: this.gender,
         };
         this.$emit("info-submitted", info);
-        (this.name = ""), (this.gender = "");
+        this.name = "";
+         this.gender = "";
       }
     },
   },
