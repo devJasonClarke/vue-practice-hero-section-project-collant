@@ -2,16 +2,18 @@
   <nav>
     <p class="logo">Collant</p>
     <NavLinks />
-    <a href="#" class="login">Sign up / Login</a>
+    <SignIn />
   </nav>
 </template>
 
 <script>
 import NavLinks from "./nav-links";
+import SignIn from './signIn';
 export default {
   name: "Nav",
   components: {
     NavLinks,
+    SignIn
   },
 };
 </script>

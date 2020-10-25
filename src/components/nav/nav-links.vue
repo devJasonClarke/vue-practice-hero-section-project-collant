@@ -4,6 +4,7 @@
         <li><a href="#" class="p-text">About</a></li>
         <li><a href="#" class="p-text">Portfolio</a></li>
         <li><a href="#" class="p-text">Contact</a></li>
+        
     </ul>
 </template>
 

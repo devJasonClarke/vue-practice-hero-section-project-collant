@@ -11,13 +11,5 @@ nav {
     font-weight: bold;
     color: #1264fa;
   }
-  .login {
-@include button;
-color: $blue;
-transition: .2s all ease-out;
-&:hover{
-  background-color: $blue;
-  color: white;
-}
-  }
+ 
 }
