@@ -9,8 +9,9 @@
       </p>
       <p class="title">Daniel Haughton <br> CEO at DH Clothing LTD </p>
     </div>
+      <div class="bg-shape"></div>
   </div>
-  <div class="bg-shape"></div>
+
 </template>
 
 <script>

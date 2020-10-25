@@ -30,10 +30,7 @@ a {
   max-width: 500px;
   margin-top: 60px;
   position: relative;
-  img {
-    height: 60px;
-    width: auto;
-  }
+
 }
 .header-info-component {
   margin-right: 15px;
@@ -56,4 +53,11 @@ a {
 }
 .h-sub-title {
   margin: 10px 0 8px 0;
+}
+
+.header-icon{
+  
+  height: 60px;
+  width: auto;
+
 }

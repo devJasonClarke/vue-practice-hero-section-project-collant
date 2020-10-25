@@ -1,0 +1,38 @@
+@import "../_utilities";
+.header-info-component {
+    margin-right: 15px;
+width: 250px;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      margin-left: 85px;
+      height: 40px;
+      width: 40px;
+      border-radius: 100%;
+      background-color: $light-blue;
+      z-index: -1;
+    }
+    p:nth-child(3) {
+      @include sub-text;
+      font-size: $text;
+    }
+  }
+  .h-sub-title {
+    margin: 10px 0 8px 0;
+    text-align: center;
+  }
+
+  .header-icon{
+  
+      height: 60px;
+      width: auto;
+      display: block;
+      margin: 0 auto;
+    
+  }
+  .sect-info-component{
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-between;
+  }
