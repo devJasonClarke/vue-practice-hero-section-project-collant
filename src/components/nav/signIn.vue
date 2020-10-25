@@ -6,7 +6,11 @@
       {{ name }}
     </div>
   </div>
-  <SignInForm v-if="form" @info-submitted="addUser" />
+  <SignInForm
+    v-if="form"
+    @info-submitted="addUser"
+    @remove-signin="removesignin"
+  />
 </template>
 
 <script>
@@ -32,15 +36,22 @@ export default {
     signIn() {
       this.loggedIn = !this.loggedIn;
       this.info = [];
+      
     },
     signInForm() {
       this.form = true;
+      document.querySelector("html").style.overflow = "hidden";
     },
     addUser(info) {
       this.info.push(info);
       this.loggedIn = this.info[0].loggedIn;
       this.name = this.info[0].name;
       this.selectGender = this.info[0].gender;
+      this.form = false;
+      document.querySelector("html").style.overflow = "auto";
+    },
+    removesignin() {
+      document.querySelector("html").style.overflow = "auto";
       this.form = false;
     },
   },

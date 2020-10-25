@@ -1,6 +1,6 @@
 <template>
   <div class="sign-in-form">
-    <div class="bg">
+    <div class="bg" @click="remove"></div>
       <form @submit.prevent="onSubmit">
         <p>Sign In</p>
         <input
@@ -26,7 +26,7 @@
 
         <button class="login" type="submit" @click="submit">Submit</button>
       </form>
-    </div>
+ 
   </div>
 </template>
 
@@ -54,6 +54,9 @@ export default {
          this.gender = "";
       }
     },
+    remove(){
+         this.$emit('remove-signin')
+    }
   },
   computed: {
     name() {
@@ -69,7 +72,7 @@ export default {
   @include button;
   color: white;
   transition: 0.2s all ease-out;
-  background-color: $blue;
+  
 
   &:hover {
     background-color: white;
@@ -78,12 +81,16 @@ export default {
 }
 .sign-in-form {
   position: fixed;
+   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
   z-index: 5;
-  overflow: hidden;
+
+
 }
 .bg {
   position: absolute;
@@ -91,9 +98,8 @@ export default {
   color: white;
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ 
+  z-index: -1;
 }
 
 form {
@@ -104,6 +110,7 @@ form {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+ 
   p {
     font-size: 30px;
     color: $blue;
