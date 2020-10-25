@@ -1,15 +1,12 @@
 <template>
   <div>
-    <a v-if="!loggedIn" href="#" class="login" @click="signInForm"
-      >Sign In</a
-    >
+    <a v-if="!loggedIn" href="#" class="login" @click="signInForm">Sign In</a>
     <div v-if="loggedIn" @click="signIn" class="login logged-in">
       <img :src="gender[selectGender]" alt="" srcset="" class="gen-icon" />
       {{ name }}
     </div>
   </div>
   <SignInForm v-if="form" @info-submitted="addUser" />
- 
 </template>
 
 <script>

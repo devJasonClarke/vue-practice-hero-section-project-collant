@@ -19,7 +19,7 @@
         />
 
         <select v-model="gender">
-          <option value="Choose A Title" disabled selected>Choose A Title</option>
+          <option value="" disabled="" selected="selected" >Choose A Title</option>
           <option value="0">Mr</option>
           <option value="1">Ms</option>
         </select>
@@ -37,12 +37,13 @@ export default {
     return {
       Fname: "",
       Lname: "",
-      gender: null,
+
+      gender: "Choose a Title",
     };
   },
   methods: {
     submit() {
-      if (this.name && this.gender) {
+      if (this.Lname && this.Fname && this.gender) {
         let info = {
           loggedIn: true,
           name: this.name,
