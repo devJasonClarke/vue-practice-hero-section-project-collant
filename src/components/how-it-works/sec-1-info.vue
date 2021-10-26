@@ -16,7 +16,7 @@ export default {
   data() {
     return {
       info: [
-        {
+        { 
           icon: icon1,
           title: "Tailored Approach",
           description:
